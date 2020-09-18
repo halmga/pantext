@@ -3,5 +3,8 @@ python:
   - "3.7"
 install:
   - pip install -r requirements.txt
+  - pip install pytest-cov codecov
 script:
-  - python -m pytest
+  - python -m pytest --cov=pantext
+after_success:
+  - codecov
