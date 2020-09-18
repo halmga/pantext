@@ -11,9 +11,5 @@ setup(name= 'pantex',
      description= 'text cleaning package for use on pandas dataframes and lists',
      author= 'Gabriel Halm',
      packages= ['pantex'],
-     install_requires= ['pandas',
-                       'numpy',
-                       'nltk',
-                       're',
-                       'tqdm'])
+     install_requires= ['pandas','numpy','nltk','tqdm'])
 
