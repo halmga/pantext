@@ -6,7 +6,9 @@
 from re import sub
 from nltk.stem import WordNetLemmatizer,PorterStemmer
 from nltk.tokenize import RegexpTokenizer, sent_tokenize, word_tokenize
+from nltk import download
 from tqdm import tqdm
+download("punkt")
 
 def text_normalize(text, method = 'lemmas'):
     """
