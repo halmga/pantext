@@ -4,7 +4,7 @@
 # In[ ]:
 
 
-from setuptoold import setup
+from setuptools import setup
 
 setup(name= 'pantex',
      version= '0.0.1',
