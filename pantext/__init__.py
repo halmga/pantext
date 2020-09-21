@@ -5,4 +5,4 @@
 
 
 from .utils import text_normalize, clean_text, concat_normtext
-from .quantifiers import Quantifiers
+from .quantifier import Quantifier
