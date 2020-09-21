@@ -5,7 +5,7 @@
 
 
 import pytest
-import pantext
+import pantext as px
 
 dickens = ["It was the best of times. it was the worst of times!",
            "it was the age of wisdom. It was the age of foolishness. it was the epoch of belief?",
