@@ -10,7 +10,7 @@ import pantext
 dickens = ["It was the best of times. it was the worst of times!",
            "it was the age of wisdom. It was the age of foolishness. it was the epoch of belief?",
            "IT WAS THE EPOCH OF INCREDULITY!?#99"]
-Q = Quantifier()
+Q = px.Quantifier()
 
 def test_normal_sentcount():
     assert Q.sent_count() == [2, 3, 2]
