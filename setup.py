@@ -13,6 +13,7 @@ setup(name='pantex',
       url='https://github.com/halmga/pantext',
       download_url = 'https://github.com/halmga/pantext/archive/0.0.1.tar.gz',
       author='halmga',
+      author_email="halm.gabriel@gmail.com",
       license='MIT',
       install_requires= ['pandas','nltk','tqdm']
       classifiers=[
