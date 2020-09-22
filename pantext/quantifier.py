@@ -103,6 +103,9 @@ class Quantifier:
             text_l = i.lower()
             word_tokens = word_tokenize(text_l)
             stop_w = [word for word in word_tokens if word in stops]
-            percent.append(round((len(stop_w)/len(word_tokens)), 2))
+            if len(stop_w) == 0:
+                percent.append(0.0)
+            else:
+                percent.append(round((len(stop_w)/len(word_tokens)), 2))
         return percent
 

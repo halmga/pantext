@@ -115,9 +115,14 @@ def concat_normtext(text):
     temp_text = []
     for t in text:
         string = ""
-        for i in t:
-            temp = []
-            string = string + " " + i
+        if t == []:
+            temp = t
+            for i in t:
+                string = string + " " + i            
+        else:
+            for i in t:
+                temp = []
+                string = string + " " + i
         temp.append(string)
         temp_text.append(temp)
     return [i for sublist in temp_text for i in sublist]

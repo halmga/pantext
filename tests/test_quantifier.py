@@ -20,4 +20,11 @@ def test_word_count():
 
 def test_english_stopcount():
     assert Q.stopword_percent(stop_words="english") == [0.57, 0.57, 0.4]
+    
+dickens_missing = ["It was the best of times. it was the worst of times!","","IT WAS THE EPOCH OF INCREDULITY!?#99"]
+
+Q = pantext.Quantifier(dickens_missing)
+
+def test_zero_percent():
+    assert Q.stopword_percent(stop_words="english") == [0.57, 0.0, 0.4]
 
