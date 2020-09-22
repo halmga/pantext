@@ -4,7 +4,7 @@
 # In[ ]:
 
 
-from setuptools import setup
+from distutils.core import setup
 
 setup(name='pantex',
       packages = ['pantex'],
