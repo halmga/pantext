@@ -6,8 +6,8 @@
 
 from distutils.core import setup
 
-setup(name='pantex',
-      packages = ['pantex'],
+setup(name='pantext',
+      packages = ['pantext'],
       version= '0.0.1',
       description= 'text cleaning package for use on pandas dataframes and lists',
       url='https://github.com/halmga/pantext',
