@@ -15,13 +15,4 @@ setup(name='pantext',
       author='halmga',
       author_email="halm.gabriel@gmail.com",
       license='MIT',
-      install_requires= ['pandas','nltk','tqdm']
-      classifiers=[
-        'Development Status :: 3 - Alpha',      # "3 - Alpha", "4 - Beta" or "5 - Production/Stable"
-        'Intended Audience :: Developers',      
-        'Topic :: Software Development :: Build Tools',
-        'License :: OSI Approved :: MIT License', # Your License Here  
-        'Programming Language :: Python :: 3',    # List Python versions that you support Here  
-        'Programming Language :: Python :: 3.4',
-        ],
-)
+      install_requires= ['pandas','nltk','tqdm'])
