@@ -10,6 +10,7 @@ import pantext
 dickens = ["It was the best of times. it was the worst of times!",
            "it was the age of wisdom. It was the age of foolishness. it was the epoch of belief?",
            "IT WAS THE EPOCH OF INCREDULITY!?#99"]
+
 Q = pantext.Quantifier(dickens)
 
 def test_normal_sentcount():
@@ -23,8 +24,8 @@ def test_english_stopcount():
     
 dickens_missing = ["It was the best of times. it was the worst of times!","","IT WAS THE EPOCH OF INCREDULITY!?#99"]
 
-Q = pantext.Quantifier(dickens_missing)
+Q_missing = pantext.Quantifier(dickens_missing)
 
 def test_zero_percent():
-    assert Q.stopword_percent(stop_words="english") == [0.57, 0.0, 0.4]
+    assert Q_missing.stopword_percent(stop_words="english") == [0.57, 0.0, 0.4]
 
